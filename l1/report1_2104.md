@@ -108,8 +108,8 @@ The GC content is around 38%, which is within the expected range for many organi
 
 Quality of the reads seems to be good, since Phred Scores are mostly above 30, which means that the probability of an incorrect base call is less than 1 in 1000. 
 
-![Mean quality scores](image-1.png)
+![Mean quality scores](img/image-1.png)
 
 Graph starts around Q31–32, quickly stabilizes at Q35 and gradual decline toward end (~Q29 at ~85 bp). Entire curve stays in green zone (>Q30), indicating high-quality reads throughout.
 
-![Per sequence quality scores](image-2.png)
+![Per sequence quality scores](img/image-2.png)
