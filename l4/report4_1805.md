@@ -32,13 +32,13 @@ fastqc ERR327955_trimmed_2.fq
 
 Here is the comparison of the quality of the data before and after trimming for the first read:
 
-![FastQC 1 before trimming](image.png)
-![FastQC 1 after trimming](image-1.png)
+![FastQC 1 before trimming](img/image.png)
+![FastQC 1 after trimming](img/image-1.png)
 
 Comparison of the quality of the data before and after trimming for the second read:
 
-![FastQC 2 before trimming](image-2.png)
-![FastQC 2 after trimming](image-3.png)
+![FastQC 2 before trimming](img/image-2.png)
+![FastQC 2 after trimming](img/image-3.png)
 
 We can see that the quality of the data has improved after trimming, especially in terms of the quality scores: the whisker never appear in the red zone for the first read and never appear in the yellow zone for the second read. Also, the percentage of bases with quality scores above 30 has increased significantly.
 
@@ -80,9 +80,9 @@ spades.py -1 ERR327955_trimmed_1.fq -2 ERR327955_trimmed_2.fq -o spades_ERR32795
 
 To evaluate the assembly, I switched to Galaxy (since I couldn't install it locally). First I uploaded the contigs file from SPADES output to Galaxy (`/l4/spades_ERR327955_output/contigs.fasta`) and then I ran QUAST to evaluate the assembly:
 
-![Galaxy QUAST](image-4.png)
+![Galaxy QUAST](img/image-4.png)
 
-![QUAST job](image-5.png)
+![QUAST job](img/image-5.png)
 
 ## The results of QUAST:
 
@@ -117,19 +117,19 @@ To evaluate the assembly, I switched to Galaxy (since I couldn't install it loca
 
 ### Cumulative length of the contigs:
 
-![Cumulative length](image-6.png)
+![Cumulative length](img/image-6.png)
 
 ### Nx:
 
-![Nx](image-7.png)
+![Nx](img/image-7.png)
 
 ### GC content:
 
-![GC content](image-8.png)
+![GC content](img/image-8.png)
 
 ### Icarus browser:
 
-![Icarus](image-9.png)
+![Icarus](img/image-9.png)
 
 
 ## Question: 
@@ -144,7 +144,7 @@ To evaluate the assembly, I switched to Galaxy (since I couldn't install it loca
 
 To check the completeness and contamination of the assembly, I ran `CheckM lineage_wf` in Galaxy:
 
-![CheckM results](image-10.png)
+![CheckM results](img/image-10.png)
 
 # 7. BUSCO analysis
 
