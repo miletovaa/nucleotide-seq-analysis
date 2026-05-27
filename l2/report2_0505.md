@@ -77,14 +77,14 @@ Basic Statistics
 | %GC | 40 |
 
 
-![fastqc quality scores across all bases](image-4.png)
+![fastqc quality scores across all bases](img/image-4.png)
 
 
 ### MultiQC
 
 The results of MultiQC after trimming are as follows:
 
-![FastQC: Mean Quality Scores](image-3.png)
+![FastQC: Mean Quality Scores](img/image-3.png)
 
 ## 3. Reference alignment
 
